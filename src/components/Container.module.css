@@ -1,8 +1,13 @@
 .container {
   max-width: var(--space-container-width);
   padding-inline: var(--space4);
-  padding-top: var(--space24);
   margin-inline: auto;
+}
+
+.container.containerTransparent {
+  padding-top: var(--space24);
+  padding-bottom: var(--space8);
+  text-align: center;
 }
 
 .container.containerBlock {

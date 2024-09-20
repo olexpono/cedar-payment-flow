@@ -57,7 +57,7 @@ a {
 }
 
 a:hover {
-  color: #535bf2;
+  color: var(--blue70);
 }
 
 body {
@@ -68,12 +68,20 @@ body {
   color: var(--blue90);
 }
 
+/* text styles & default html els */
 h1 {
   font-size: 3em;
   line-height: 1.0;
 }
 
-.text-p-bold {
+p, .text-p {
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: 0.2px;
+}
+
+strong, .text-p-bold {
+  font-size: 1rem;
   font-weight: 600;
   letter-spacing: 0.002em;
 }
@@ -82,6 +90,7 @@ h2, .text-h2 {
   font-size: 1.75rem; /* 28 */
   line-height: 2.25rem; /* 36 */
   font-weight: 600;
+  color: var(--blue70);
 }
 
 h1, h2, h3, h4, h5 {

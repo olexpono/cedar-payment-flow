@@ -10,7 +10,7 @@ function Container(props: {
   const variant = props.variant ?? "transparent";
   const className =
     styles.container +
-    ` ${variant === "block" ? styles.containerBlock : ""}` +
+    ` ${variant === "block" ? styles.containerBlock : styles.containerTransparent}` +
     ` ${props.className ?? ""}`;
 
   return React.createElement(props?.el ?? "div", { className }, props.children);
