@@ -1,21 +1,36 @@
 :root {
   --white: #fff;
-  --neutral10: #f2f8ff;
+  /* --neutral05: #f2f8ff; */
+  --neutral10: #e7e9ef;
   --neutral50: #6d7088;
   --neutral60: #65657b;
   --blue10: #f2f8ff;
   --blue50: #3667e9;
   --blue70: #13126c;
   --blue90: #171731;
+
+  --space1: 0.25rem;
+  --space2: 0.5rem;
+  --space3: 0.75rem;
+  --space4: 1rem;
+  --space5: 1.25rem;
+
+  --space8: 2rem;
+  --space12: 3rem;
+  --space24: 6rem; /* 96px */
+
+  --space-container-width: 30rem; /* 480 */
+  --space-container-width-lg: 34rem; /* 480 + 64 */
 }
 
 :root {
-  font-family: system-ui, Arial, Helvetica, sans-serif;
+  font-family: Arial, system-ui, Helvetica, sans-serif;
   line-height: 1.5;
   font-weight: 400;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   box-sizing: border-box;
+  font-size: 100%; /* 16px rem */
 }
 
 .sr-only {
@@ -50,10 +65,25 @@ body {
   margin: 0;
   min-height: 100vh;
   background: var(--blue10);
+  color: var(--blue90);
 }
 
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  font-size: 3em;
+  line-height: 1.0;
+}
+
+.text-p-bold {
+  font-weight: 600;
+  letter-spacing: 0.002em;
+}
+
+h2, .text-h2 {
+  font-size: 1.75rem; /* 28 */
+  line-height: 2.25rem; /* 36 */
+  font-weight: 600;
+}
+
+h1, h2, h3, h4, h5 {
   margin: 0;
 }

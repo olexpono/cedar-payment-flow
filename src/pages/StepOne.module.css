@@ -1,0 +1,16 @@
+.stepOneContainer {
+  padding-top: var(--space24);
+  padding-bottom: var(--space12);
+}
+
+.totalDisplay {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: var(--space8);
+  padding-bottom: var(--space4);
+}
+
+.totalDisplay dt {
+  color: var(--neutral60);
+}

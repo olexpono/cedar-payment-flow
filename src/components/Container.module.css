@@ -1,0 +1,12 @@
+.container {
+  max-width: var(--space-container-width);
+  padding-inline: var(--space4);
+  padding-top: var(--space24);
+  margin-inline: auto;
+}
+
+.container.containerBlock {
+  max-width: var(--space-container-width-lg);
+  background-color: var(--white);
+  border-bottom: var(--neutral10);
+}
