@@ -1,0 +1,18 @@
+.stepperCircle {
+  /* text-p */
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: 0.2px;
+  margin-inline-end: 1em;
+
+  display: inline-block;
+  width: var(--space6);
+  color: var(--white);
+  text-align: center;
+  border-radius: 50%;
+  background: var(--blue50);
+}
+
+.stepper {
+  padding-bottom: var(--space5);
+}

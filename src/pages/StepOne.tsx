@@ -13,7 +13,11 @@ function StepOne(props: {
   return (
     <Container el="main">
       <h2>Hi, {props.receiptData.name}</h2>
-      <p>You have {props.receiptData.billCount} medical bills ready from ABC Health System. You can pay your bills here or verify your identity to view full bill details.</p>
+      <p>
+        You have {props.receiptData.billCount} medical bills ready from ABC
+        Health System. You can pay your bills here or verify your identity to
+        view full bill details.
+      </p>
       <dl className={styles.totalDisplay}>
         <dt className="text-p-bold">Total due</dt>
         <dd className="text-h2">${props.receiptData.amount}</dd>
