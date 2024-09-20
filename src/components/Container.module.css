@@ -11,7 +11,20 @@
 }
 
 .container.containerBlock {
+  padding-top: var(--space4);
+  padding-bottom: var(--space8);
+  padding-inline: var(--space8);
   max-width: var(--space-container-width-lg);
   background-color: var(--white);
   border-bottom: var(--neutral10);
+}
+
+@media screen and (min-width: 786px) {
+  .container.containerBlock {
+    margin-top: var(--space7);
+    padding-top: var(--space8);
+    padding-bottom: var(--space12);
+    padding-inline: var(--space12);
+    border-radius: var(--space4);
+  }
 }

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import styles from "./App.module.css";
 import StepOne from "./pages/StepOne";
+import StepPaymentInfo from "./pages/StepPaymentInfo";
 
 function App() {
   // Typically this would be done via a router
@@ -17,7 +18,7 @@ function App() {
   return (
     <>
       <nav className={styles.nav}>
-        <h1>
+        <h1 className={styles.logo}>
           <span className="sr-only">ABC Health System</span>
           <img
             alt="ABC Health System Logo"
@@ -32,6 +33,10 @@ function App() {
           receiptData={RECEIPT_DATA}
           proceed={() => setStep("paymentInfo")}
         ></StepOne>
+      )}
+
+      {step === "paymentInfo" && (
+        <StepPaymentInfo proceed={() => setStep("review")}></StepPaymentInfo>
       )}
     </>
   );
