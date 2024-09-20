@@ -1,3 +1,17 @@
 .button {
+  /* text-p-bold mixin */
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 600;
+  letter-spacing: 0.002em;
+
+  appearance: none;
   display: inline-flex;
+  justify-content: center;
+  width: 100%;
+  padding-block: var(--space3);
+  color: var(--white);
+  background: var(--blue50);
+  border: 0;
+  border-radius: var(--space3);
 }
