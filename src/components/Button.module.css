@@ -15,3 +15,13 @@
   border: 0;
   border-radius: var(--space3);
 }
+
+.button:focus-visible,
+.button:hover {
+  outline: 1.5px solid var(--blue50);
+  outline-offset: 1px;
+}
+
+.button:active {
+  background-color: var(--blue60);
+}

@@ -18,7 +18,7 @@ function StepOne(props: {
         <dt className="text-p-bold">Total due</dt>
         <dd className="text-h2">${props.receiptData.amount}</dd>
       </dl>
-      <Button>Pay total</Button>
+      <Button onClick={() => props.proceed()}>Pay total</Button>
     </Container>
   );
 }
