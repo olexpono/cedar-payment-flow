@@ -1,0 +1,4 @@
+.nav {
+  background: var(--white);
+  border-bottom: 1px solid var(--neutral10);
+}
