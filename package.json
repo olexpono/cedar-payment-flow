@@ -9,6 +9,7 @@
     "lint": "eslint .",
     "lint:fix": "npx prettier -w . && npm run lint",
     "preview": "vite preview",
+    "test": "npm run e2e",
     "e2e": "npx playwright test",
     "e2e:interactive": "npx playwright test --ui"
   },

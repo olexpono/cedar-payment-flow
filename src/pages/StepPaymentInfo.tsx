@@ -8,6 +8,8 @@ import FormField from "../components/FormField";
 import Stepper from "../components/Stepper";
 import styles from "./StepPaymentInfo.module.css";
 
+const isNumeric = (value: string) => /^\d+$/.test(value.trim());
+
 function StepPaymentInfo(props: { proceed: () => void }) {
   const [hasSubmitted, setHasSubmitted] = useState(false);
 
@@ -25,7 +27,9 @@ function StepPaymentInfo(props: { proceed: () => void }) {
         validateOnBlur={true}
         validateOnChange={hasSubmitted}
         validationSchema={Yup.object().shape({
-          cardNumber: Yup.string().required("Card number is required"),
+          cardNumber: Yup.string()
+            .required("Card number is required")
+            .test("numeric", "Card number should be numeric", isNumeric),
           expires: Yup.string()
             .required("Card expiration is required")
             .test(
@@ -39,9 +43,15 @@ function StepPaymentInfo(props: { proceed: () => void }) {
                 return parseInt(month) <= 12 && parseInt(year) >= 24;
               },
             ),
-          security: Yup.string().required("CVV is required"),
+          security: Yup.string()
+            .required("CVV is required")
+            .test("numeric", "CVV should be numeric", (value: string) =>
+              /^\d+$/.test(value.trim()),
+            ),
           nameOnCard: Yup.string().required("Name is required"),
-          zipcode: Yup.string().required("Zipcode is required"),
+          zipcode: Yup.string()
+            .required("Zipcode is required")
+            .test("numeric", "Zipcode number should be numeric", isNumeric),
         })}
         onSubmit={() => {
           setHasSubmitted(true);
