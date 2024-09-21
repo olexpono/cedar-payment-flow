@@ -1,6 +1,5 @@
 :root {
   --white: #fff;
-  /* --neu/65657Btral05: #f2f8ff; */
   --neutral10: #e7e9ef;
   --neutral50: #6d7088;
   --neutral60: #65657b;
@@ -37,17 +36,6 @@
   font-size: 100%; /* 16px rem */
 }
 
-.sr-only {
-  position: absolute;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-}
-
 *,
 *::before,
 *::after {
@@ -72,8 +60,9 @@ body {
   color: var(--blue90);
 }
 
-/* text styles & default html els */
-h1 {
+/* Text Styles */
+h1,
+.text-h1 {
   font-size: 2.5rem; /* 40 */
   line-height: 1;
 }
@@ -135,4 +124,16 @@ h3,
 h4,
 h5 {
   margin: 0;
+}
+
+/* Utilities */
+.sr-only {
+  position: absolute;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
 }

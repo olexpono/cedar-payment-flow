@@ -80,7 +80,7 @@ function StepPaymentInfo(props: { proceed: () => void }) {
               />
 
               <FormField
-                labelText="Security Code"
+                labelText="Security Code (CVV)"
                 id="pi-security"
                 isNumeric={true}
                 name="security"
