@@ -30,23 +30,23 @@ function FormField(props: FormFieldProps) {
               {...(meta.error
                 ? { "aria-errormessage": `validation-error-${props.id}` }
                 : {})}
-              {...(props.isNumeric ? { inputmode: "numeric" } : {})}
+              {...(props.isNumeric ? { inputMode: "numeric" } : {})}
               {...field}
               className={
                 styles.formFieldInput +
                 ` ${meta.error ? styles.formFieldInputError : ""}`
               }
             />
-            {meta.touched && meta.error && (
+            {meta.error && (
               <img
-                aria-role="presentation"
+                role="presentation"
                 className={styles.inputStatusIcon}
                 src="/assets/icons/alert-circle.svg"
               />
             )}
             {meta.touched && meta.value && !meta.error && (
               <img
-                aria-role="presentation"
+                role="presentation"
                 className={styles.inputStatusIcon}
                 src="/assets/icons/check.svg"
               />
