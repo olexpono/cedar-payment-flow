@@ -27,6 +27,9 @@ function FormField(props: FormFieldProps) {
               type="text"
               id={props.id}
               placeholder={props.placeholder}
+              {...(meta.error
+                ? { "aria-errormessage": `validation-error-${props.id}` }
+                : {})}
               {...(props.isNumeric ? { inputmode: "numeric" } : {})}
               {...field}
               className={
@@ -36,12 +39,14 @@ function FormField(props: FormFieldProps) {
             />
             {meta.touched && meta.error && (
               <img
+                aria-role="presentation"
                 className={styles.inputStatusIcon}
                 src="/assets/icons/alert-circle.svg"
               />
             )}
             {meta.touched && meta.value && !meta.error && (
               <img
+                aria-role="presentation"
                 className={styles.inputStatusIcon}
                 src="/assets/icons/check.svg"
               />
@@ -52,6 +57,7 @@ function FormField(props: FormFieldProps) {
       </Field>
       <ErrorMessage
         component="span"
+        id={`validation-error-${props.id}`}
         className={"text-validation-error " + styles.validationError}
         name={props.name}
       />
