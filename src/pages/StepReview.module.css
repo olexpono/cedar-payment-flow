@@ -9,3 +9,13 @@
   display: flex;
   gap: var(--space3);
 }
+
+/* Wonky h3-like text style, should be a text style? */
+.paragraphHighlight {
+  font-size: 1.25rem; /* 20 */
+  line-height: 1.5rem; /* 24 */
+  font-weight: 400;
+  letter-spacing: 0.2px;
+
+  margin-bottom: var(--space6); /* 29px in design */
+}

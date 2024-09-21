@@ -14,7 +14,7 @@ function StepReview(props: {
   return (
     <Container variant="block">
       <Stepper num={2}>Review and pay</Stepper>
-      <p className="text-h3-normal">
+      <p className={styles.paragraphHighlight}>
         You&apos;re about to make a payment of{" "}
         <strong>${props.receiptData.amount}</strong>
       </p>

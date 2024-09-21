@@ -12,7 +12,7 @@ function StepOne(props: {
 }) {
   return (
     <Container el="main">
-      <h2>Hi, {props.receiptData.name}</h2>
+      <h2 className={styles.stepOneHeader}>Hi, {props.receiptData.name}</h2>
       <p>
         You have {props.receiptData.billCount} medical bills ready from ABC
         Health System. You can pay your bills here or verify your identity to

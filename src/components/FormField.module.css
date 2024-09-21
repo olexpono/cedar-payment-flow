@@ -41,6 +41,7 @@
 }
 
 .validationError {
+  display: block;
   margin-top: var(--space2);
 }
 

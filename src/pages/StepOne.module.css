@@ -7,10 +7,14 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: var(--space8);
-  padding-bottom: var(--space4);
+  padding-top: var(--space12);
+  padding-bottom: var(--space6);
 }
 
 .totalDisplay dt {
   color: var(--neutral60);
+}
+
+.stepOneHeader {
+  margin-bottom: var(--space4);
 }

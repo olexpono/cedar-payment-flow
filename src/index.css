@@ -60,7 +60,22 @@ body {
   color: var(--blue90);
 }
 
+ol,
+dl,
+ul {
+  margin: 0;
+}
+
 /* Text Styles */
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+
 h1,
 .text-h1 {
   font-size: 2.5rem; /* 40 */
@@ -88,13 +103,6 @@ h2,
   color: var(--blue70);
 }
 
-.text-h3-normal {
-  font-size: 1.25rem; /* 20 */
-  line-height: 1.5rem; /* 24 */
-  font-weight: 400;
-  letter-spacing: 0.2px;
-}
-
 h3,
 .text-h3 {
   font-size: 1.25rem; /* 20 */
@@ -116,14 +124,6 @@ h3,
   line-height: 1.25rem; /* 20 */
   font-weight: 400;
   color: var(--red60);
-}
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-  margin: 0;
 }
 
 /* Utilities */
