@@ -20,7 +20,7 @@ function FormField(props: FormFieldProps) {
       </label>
       <Field handleChange={props.handleChange} name={props.name}>
         {/* eslint-disable @typescript-eslint/no-unsafe-member-access */}
-        {/* eslint-disable-next-line @typescript-eslint/no-unused-vars, @typescript-eslint/no-explicit-any */}
+        {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
         {({ field, meta }: any) => (
           <div className={styles.formFieldInner}>
             <input

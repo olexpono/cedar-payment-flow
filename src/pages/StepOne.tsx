@@ -19,7 +19,9 @@ function StepOne(props: {
         view full bill details.
       </p>
       <dl className={styles.totalDisplay}>
-        <dt className="text-p-bold">Total due</dt>
+        <dt className="text-p">
+          <strong>Total due</strong>
+        </dt>
         <dd className="text-h2">${props.receiptData.amount}</dd>
       </dl>
       <Button onClick={() => props.proceed()}>Pay total</Button>

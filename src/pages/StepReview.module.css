@@ -1,0 +1,11 @@
+.paymentInfoBlock {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space1);
+  margin-bottom: var(--space9);
+}
+
+.paymentMethod {
+  display: flex;
+  gap: var(--space3);
+}

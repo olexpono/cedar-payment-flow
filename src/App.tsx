@@ -2,6 +2,8 @@ import { useState } from "react";
 import styles from "./App.module.css";
 import StepOne from "./pages/StepOne";
 import StepPaymentInfo from "./pages/StepPaymentInfo";
+import StepReview from "./pages/StepReview";
+import StepThanks from "./pages/StepThanks";
 
 function App() {
   // Typically this would be done via a router
@@ -38,6 +40,15 @@ function App() {
       {step === "paymentInfo" && (
         <StepPaymentInfo proceed={() => setStep("review")}></StepPaymentInfo>
       )}
+
+      {step === "review" && (
+        <StepReview
+          receiptData={RECEIPT_DATA}
+          proceed={() => setStep("thanks")}
+        ></StepReview>
+      )}
+
+      {step === "thanks" && <StepThanks></StepThanks>}
     </>
   );
 }

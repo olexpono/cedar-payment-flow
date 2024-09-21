@@ -19,6 +19,7 @@
   --space6: 1.5rem;
   --space7: 2.75rem; /* 32px */
   --space8: 2rem; /* 36px */
+  --space9: 2.25rem; /* 40px */
   --space12: 3rem; /* 48px */
   --space24: 6rem; /* 96px */
 
@@ -86,8 +87,6 @@ p,
 
 strong,
 .text-p-bold {
-  font-size: 1rem;
-  line-height: 1.5;
   font-weight: 700;
   letter-spacing: 0.2px;
 }
@@ -98,6 +97,13 @@ h2,
   line-height: 2.25rem; /* 36 */
   font-weight: 700;
   color: var(--blue70);
+}
+
+.text-h3-normal {
+  font-size: 1.25rem; /* 20 */
+  line-height: 1.5rem; /* 24 */
+  font-weight: 400;
+  letter-spacing: 0.2px;
 }
 
 h3,

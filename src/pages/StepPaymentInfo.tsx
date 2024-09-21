@@ -22,7 +22,7 @@ function StepPaymentInfo(props: { proceed: () => void }) {
           nameOnCard: "",
           zipcode: "",
         }}
-        validateOnBlur={hasSubmitted}
+        validateOnBlur={true}
         validateOnChange={hasSubmitted}
         validationSchema={Yup.object().shape({
           cardNumber: Yup.string().required("Card number is required"),
