@@ -8,6 +8,7 @@ test("test form validation", async ({ page }) => {
   await expect(page.getByLabel("Card number")).toBeFocused();
 
   await page.getByLabel("Card number").fill("55555aaaa");
+  await page.getByLabel("Card number").blur();
   await page.getByRole("button", { name: "Continue" }).click();
 
   // Complex card number validation visible
@@ -15,6 +16,10 @@ test("test form validation", async ({ page }) => {
   await expect(page.locator("form")).toContainText(
     "Card number should be numeric",
   );
+  await page.getByLabel("Expires").focus();
+  await page.getByLabel("Security").focus();
+  await page.getByLabel("Name on card").focus();
+  await page.getByLabel("Zip code").focus();
   await expect(page.getByText("Card expiration is required")).toBeVisible();
   await expect(page.getByText("CVV is required")).toBeVisible();
   await expect(page.getByText("Name is required")).toBeVisible();
